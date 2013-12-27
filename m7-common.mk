@@ -24,9 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_PACKAGES += \
-    Launcher3
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -196,7 +193,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.call_ring.delay=3000 \
+    rild.libargs=-d /dev/smd0 \
+    rild.libpath=/system/lib/libril-qc-qmi-1.so \
     ro.vendor.extension_library=/system/vendor/lib/libqc-opt.so
+
+# Hardware Info
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.device.chipset="Qualcomm SND600" \
+    ro.device.cpu="1.7 GHz quad-core" \
+    ro.device.gpu="Qualcomm Adreno 320" \
+    ro.device.rear_cam="HTC UltraPixel (4mp) Camera" \
+    ro.device.front_cam="2.1 MP" \
+    ro.device.screen_res="4.7 inch 1080p resolution"
 
 # Set build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
