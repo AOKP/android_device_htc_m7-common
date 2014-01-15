@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
 # Misc Packages
 PRODUCT_PACKAGES += \
     DeviceSettings \
+    OmniSwitch \
     Torch
 
 # Prepatch to fix BT/WiFi bus lockups
