@@ -27,6 +27,14 @@
 # inherit from common msm8960
 -include device/htc/msm8960-common/BoardConfigCommon.mk
 
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_SMP := true
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := krait
+TARGET_ARCH_VARIANT_FPU := neon
+
 TARGET_SPECIFIC_HEADER_PATH := device/htc/m7-common/include
 
 # Krait optimizations from Bionic
