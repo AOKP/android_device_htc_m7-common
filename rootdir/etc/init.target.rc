@@ -1,0 +1,42 @@
+on boot
+
+on property:ro.build.device=m7
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/ -u
+	class core
+	user root
+	oneshot
+
+on property:ro.build.device=m7
+service setup_fs /system/bin/setup_fs mmcblk0p36
+	class core
+	user root
+	group root
+	oneshot
+	
+
+on property:ro.build.device=m7spr
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /vendor/firmware/
+	class core
+	user root
+	oneshot
+
+on property:ro.build.device=m7spr
+service setup_fs /system/bin/setup_fs mmcblk0p38
+	class core
+	user root
+	group root
+	oneshot
+	
+
+on property:ro.build.device=m7vzw
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/
+	class core
+	user root
+	oneshot
+
+on property:ro.build.device=m7vzw	
+service setup_fs /system/bin/setup_fs mmcblk0p36
+	class core
+	user root
+	group root
+	oneshot
