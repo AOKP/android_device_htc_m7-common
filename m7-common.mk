@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Recovery
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 PRODUCT_PACKAGES += \
     lpm.rc \
     charger \
