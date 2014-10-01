@@ -14,4 +14,25 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"/>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">進階設定</string>
+  <string name="defaults_button">重置為預設值</string>
+  <string name="category_haptic_title">觸碰</string>
+  <string name="vibrator_title">震動</string>
+  <string name="vibrator_tuning_title">震動強度</string>
+  <string name="vibrator_tuning_summary_head">調整震動回饋強度</string>
+  <string name="vibrator_warning">不建議超過 %1$d 的數值</string>
+  <string name="category_touchscreen_title">觸控式螢幕</string>
+  <string name="logo2menu_title">選單標誌</string>
+  <string name="logo2menu_switch_title_head">啟用</string>
+  <string name="logo2menu_switch_summary_head">使 HTC 標誌上半部分作為硬件選單按鈕。</string>
+  <string name="longtaplogosleep_switch_title_head">長按休眠</string>
+  <string name="longtaplogosleep_switch_summary_head">如果勾選，長按 HTC 標誌上半部分將使電話休眠，這會覆寫系統對實體按鈕的長按設定。</string>
+  <string name="wake_title">喚醒</string>
+  <string name="wake_method_title_head">喚醒方法</string>
+  <string name="wake_method_summary_head">選擇你想使用的觸控板喚醒方法。</string>
+  <string name="category_sensors_title">感應器</string>
+  <string name="proximity_subcat_title">接近度</string>
+  <string name="proximity_calibration_title">校準</string>
+  <string name="proximity_calibration_summary">設定校準值。較高的值意味著敏感性較低。</string>
+</resources>
